@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body> 
+    <button class="formulario">Empezar</button>
+    <form class="formulario" id="formulario">
+
+        <div class="form__input">
+            <label for="nameUser">Nombre</label>
+            <input type="text" id="nameUser" placeholder=" Cristian">
+        </div>
+         
+        <div class="form__input">
+            <label for="ageUser">Edad</label>
+            <input type="number" id="ageUser" name="ageUser" placeholder="36">
+        </div>
+
+        <div class="form__input">
+            <label for="mailUser">Email</label>
+            <input type="email" id="mailUser" name="mailUser" placeholder="crissegu777@gmail.com">
+        </div>
+
+        <div class="form__input">
+            <label for="countryUser">Pais</label>
+            <select name="countryuser" id="countryUser">
+                <option value=""" hidden>Selecciona un país</option>
+                <option value="col">Colombia</option>
+                <option value="per">Peru</option>
+                <option value="bra">Brazil</option>
+                <option value="chi">Chile</option>
+                <option value="ecu">Ecuador</option>
+             </select>
+        </div>
+        
+
+        <div class="form__input">
+            <input type="checkbox" id="checkTerm" name="checkTerm">
+            <label for="checkTerm">Aceptas terminos y condiciones</label>
+        </div>
+
+        <div class="form__input">
+            <label for="genderUser">Genero</label>
+            <br>
+            <input type="radio" id="men" name="gender" value="men">
+            <label for="men">Hombre</label>
+            <br>
+            <input type="radio" id="women" name="gender" value="women">
+            <label for="women">Mujer</label>
+        </div>
+
+
+            <input type="reset" value="Limpiar">        
+            <input type="submit" value="Enviar">
+</form> 
+
+    <div class="user"></div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
